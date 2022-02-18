@@ -1,0 +1,40 @@
+{
+  "name": "123GO",
+  "version": "1.0.0",
+  "description": "123GO test project.",
+  "main": "123go.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint 123go.js lib",
+    "stress": "artillery quick --count 10 -n 20 http://localhost:3000/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jihwan27/123GO.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jihwan27/123GO/issues"
+  },
+  "homepage": "https://github.com/jihwan27/123GO#readme",
+  "dependencies": {
+    "body-parser": "1.19.1",
+    "cors": "2.8.5",
+    "express": "4.17.3",
+    "express-handlebars": "3.1.0",
+    "lodash": "4.17.21",
+    "mongoose": "5.13.14",
+    "morgan": "1.10.0",
+    "multiparty": "4.2.2",
+    "nodemailer": "6.7.2"
+  },
+  "devDependencies": {
+    "eslint": "5.16.0",
+    "jest": "25.5.4",
+    "node-fetch": "2.6.7",
+    "nodemon": "2.0.15",
+    "portfinder": "1.0.28",
+    "puppeteer": "1.20.0"
+  }
+}
