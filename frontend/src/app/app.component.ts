@@ -9,15 +9,14 @@ import { ApiService } from './service/api.service';
 export class AppComponent {
   title = 'frontend';
 
-  backendData: any;
-  backendDataHttp: any;
+  backendData: string = '';
 
   constructor(
     private apiService: ApiService
   ) {
     this.apiService.get().subscribe(result => {
-      this.backendData = result;
-      console.log(this.backendData.message);
+      this.backendData = result.message;
+      console.log(this.backendData);
     });
   }
 

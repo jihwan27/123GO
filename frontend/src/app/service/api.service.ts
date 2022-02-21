@@ -12,11 +12,7 @@ export class ApiService {
     private http: HttpClient
   ) { }
 
-  // get() {
-  //   return "AAAAAAAAAAAAA"
-  // }
-
-  get() {
-    return this.http.get('/api/login', { headers: this.headers });
+  get(): Observable<any> {
+    return this.http.get('/api/main', { headers: this.headers });
   }
 }
