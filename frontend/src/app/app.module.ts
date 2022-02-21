@@ -5,10 +5,16 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ApiService } from './service/api.service';
+import { MainComponent } from './modules/main/main.component';
+import { LoginComponent } from './modules/login/login.component';
+import { HeaderComponent } from './modules/header/header.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MainComponent,
+    LoginComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
