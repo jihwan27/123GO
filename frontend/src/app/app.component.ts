@@ -9,13 +9,18 @@ import { ApiService } from './service/api.service';
 export class AppComponent {
   title = 'frontend';
 
-  backendData = '';
+  // backendData = '';
+  backendData: any;
+  backendDataHttp: any;
 
   constructor(
     private apiService: ApiService
   ) {
-    this.apiService = new ApiService();
-    this.backendData = apiService.get();
+    // this.backendData = this.apiService.get();
+    this.apiService.get().subscribe(result => {
+      this.backendData = result;
+      console.log(this.backendData.message);
+    });
   }
 
 }
