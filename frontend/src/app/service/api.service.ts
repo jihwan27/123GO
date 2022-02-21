@@ -17,6 +17,6 @@ export class ApiService {
   // }
 
   get() {
-    return this.http.get('/api/main', { headers: this.headers });
+    return this.http.get('/api/login', { headers: this.headers });
   }
 }

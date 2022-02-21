@@ -23,6 +23,4 @@ if (require.main === module) {
 }
 
 // All routes access is controled by routes.js and handlers/ ...
-// require('./routes')(app);
-app.get('/main', (req, res) => res.json({ message: 'Backend connection success!' }));
-app.get('/main/2', (req, res) => res.json({ message: 'Backend connection success!' }));
+require('./routes')(app);
