@@ -8,6 +8,7 @@ import { ApiService } from './service/api.service';
 import { MainComponent } from './modules/main/main.component';
 import { LoginComponent } from './modules/login/login.component';
 import { HeaderComponent } from './modules/header/header.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HeaderComponent } from './modules/header/header.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    NgbModule
   ],
   providers: [ApiService],
   bootstrap: [AppComponent]
