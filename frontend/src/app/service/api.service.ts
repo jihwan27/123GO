@@ -15,4 +15,9 @@ export class ApiService {
   get(): Observable<any> {
     return this.http.get('/api/main', { headers: this.headers });
   }
+
+  addUser(userName: string): Observable<any> {
+    console.log('API SERVICE' + userName);
+    return this.http.post('/api/user', {name: userName} , { headers: this.headers });
+  }
 }

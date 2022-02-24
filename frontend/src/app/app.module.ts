@@ -9,19 +9,23 @@ import { MainComponent } from './modules/main/main.component';
 import { LoginComponent } from './modules/login/login.component';
 import { HeaderComponent } from './modules/header/header.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SideBarComponent } from './modules/side-bar/side-bar.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
     LoginComponent,
-    HeaderComponent
+    HeaderComponent,
+    SideBarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    NgbModule
+    NgbModule,
+    FormsModule
   ],
   providers: [ApiService],
   bootstrap: [AppComponent]

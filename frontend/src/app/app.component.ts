@@ -10,6 +10,7 @@ export class AppComponent {
   title = 'frontend';
 
   backendData: string = '';
+  dbData: any;
 
   constructor(
     private apiService: ApiService

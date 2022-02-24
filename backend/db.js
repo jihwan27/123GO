@@ -16,3 +16,14 @@ db.on('error', error => {
   process.exit(1);
 });
 db.once('open', () => console.log('MongoDB connection established.'));
+
+// Add user.
+const User = require('./models/user');
+module.exports = {
+  addUser: async (name) => {
+    const user = new User({
+      name: name
+    });
+    await db.collection('user').insertOne(user);
+  }
+};
