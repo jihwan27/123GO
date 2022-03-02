@@ -11,7 +11,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // Start server.
 if (require.main === module) {
-  startServer(process.env.PORT || 3000);
+  // startServer(process.env.PORT || 3000);
+  startServer(process.env.PORT || 5000);
 } else {
   module.exports = startServer;
 }
