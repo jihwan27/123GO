@@ -8,10 +8,11 @@ function App() {
 
   const [backendMessage, setBackendMessage] = useState("Maybe back-end server is not running ... ");
 
-  const getData = async() => {
-    console.log(homeApi.getBackendConnection());
-    axios.get("/main").then(res => setBackendMessage(res.data.message));
-  };
+  const getData = () => {
+    homeApi.getBackendConnection().then(res => {
+      setBackendMessage(res.data.message);
+    });
+  }
   
   useEffect(() => {
     getData();

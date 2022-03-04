@@ -1,3 +1,5 @@
+import SubmitForm from "./shared/submit-form";
+
 function Home() {
   interface Props {
     firstName: string;
@@ -11,6 +13,7 @@ function Home() {
       <div>Header</div>
       <div>Dashboard</div>
       <div>Footer</div>
+      <SubmitForm />
     </div>
   );
 }
