@@ -1,8 +1,17 @@
 function Home() {
-  const stringArray: Array<string> = ["1, 2", "a"];
+  interface Props {
+    firstName: string;
+    lastName: string;
+  }
+
+  const a: Props = {firstName: "a", lastName: "b"};
 
   return (
-    <div>Home</div>
+    <div>
+      <div>Header</div>
+      <div>Dashboard</div>
+      <div>Footer</div>
+    </div>
   );
 }
 

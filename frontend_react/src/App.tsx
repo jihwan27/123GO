@@ -1,15 +1,17 @@
-import React, { useEffect, useState } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { useEffect, useState } from "react";
 import axios from "axios";
-import Home from "./components/home";
-import { Button } from 'react-bootstrap';
+import AppRouter from "modules/app-router";
+import { HomeApi } from "modules/api/home-api";
 
 function App() {
+  const homeApi = new HomeApi();
+
   const [backendMessage, setBackendMessage] = useState("Maybe back-end server is not running ... ");
 
   const getData = async() => {
+    console.log(homeApi.getBackendConnection());
     axios.get("/main").then(res => setBackendMessage(res.data.message));
-  }; 
+  };
   
   useEffect(() => {
     getData();
@@ -18,16 +20,9 @@ function App() {
   return (
     <div>
       <h1>Hello w REACT front end!</h1>
-      <div>{backendMessage}</div>
-      <div>Here must be Router.</div>
-      <Button variant="outline-primary">Primary</Button>{'boot strap button. '}
-      <Router>
-        <Switch>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
-      </Router>
+      <div>BACKEND CONNECTION::: {backendMessage}</div>
+      <hr></hr>
+      <AppRouter />
     </div>
   )
 }
