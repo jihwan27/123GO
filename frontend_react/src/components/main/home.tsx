@@ -1,4 +1,5 @@
-import SubmitForm from "./shared/submit-form";
+import SubmitForm from "../shared/submit-form";
+import Header from "components/shared/header";
 
 function Home() {
   interface Props {
@@ -9,11 +10,8 @@ function Home() {
   const a: Props = {firstName: "a", lastName: "b"};
 
   return (
-    <div>
-      <div>Header</div>
-      <div>Dashboard</div>
-      <div>Footer</div>
-      <SubmitForm />
+    <div className="container-fluid">
+      메인 페이지 내용
     </div>
   );
 }

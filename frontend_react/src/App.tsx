@@ -2,6 +2,9 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import AppRouter from "modules/app-router";
 import { HomeApi } from "modules/api/home-api";
+import SubmitForm from "components/shared/submit-form";
+import Header from "components/shared/header";
+import { Row, Col } from "react-bootstrap";
 
 function App() {
   const homeApi = new HomeApi();
@@ -22,8 +25,18 @@ function App() {
     <div>
       <h1>Hello w REACT front end!</h1>
       <div>BACKEND CONNECTION::: {backendMessage}</div>
-      <hr></hr>
-      <AppRouter />
+      <div>:::TOTAL TEST AREA:::</div>
+      <SubmitForm />
+      <div className="container-fluid">
+        <Row>
+          <Col></Col>
+          <Col xs={10}>           
+            <Header />
+            <AppRouter />
+          </Col>
+          <Col></Col>
+        </Row>
+      </div>
     </div>
   )
 }

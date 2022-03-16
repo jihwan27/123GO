@@ -31,7 +31,7 @@ function SubmitForm() {
             type="text"
             placeholder="Write your name..."
           />
-          <button>Submit name</button>
+          <button className="btn btn-primary">Submit name</button>
         </form>
         <hr />
       </div>
