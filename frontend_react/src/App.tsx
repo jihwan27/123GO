@@ -6,7 +6,7 @@ import { HomeApi } from "modules/api/home-api";
 function App() {
   const homeApi = new HomeApi();
 
-  const [backendMessage, setBackendMessage] = useState("Maybe back-end server is not running ... ");
+  const [backendMessage, setBackendMessage]: [string, any] = useState("Maybe back-end server is not running ... ");
 
   const getData = () => {
     homeApi.getBackendConnection().then(res => {
@@ -29,3 +29,4 @@ function App() {
 }
 
 export default App;
+
