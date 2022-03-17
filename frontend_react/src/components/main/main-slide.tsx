@@ -10,6 +10,7 @@ function MainSlide() {
   };
 
   return (
+    <div className={styles.main_slide}>
     <Carousel activeIndex={index} onSelect={handleSelect} className={styles.main_slide_body}>      
       <Carousel.Item className={styles.main_slide_item}>
         <img
@@ -44,6 +45,7 @@ function MainSlide() {
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
+    </div>
   );
 }
 
