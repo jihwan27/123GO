@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
 const credentials = require('./credentials')
-// const env = process.env.NODE_ENV || "development"
 const { connectionString } = credentials.mongo;
 
 if (!connectionString) {

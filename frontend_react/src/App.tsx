@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import axios from "axios";
 import AppRouter from "modules/app-router";
 import { HomeApi } from "modules/api/home-api";
 import SubmitForm from "components/shared/submit-form";
 import Header from "components/shared/header";
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Container } from "react-bootstrap";
+import "./styles/styles.css"
 
 function App() {
   const homeApi = new HomeApi();
@@ -22,22 +22,14 @@ function App() {
   }, []);
 
   return (
-    <div>
+    <Container>
       <h1>Hello w REACT front end!</h1>
       <div>BACKEND CONNECTION::: {backendMessage}</div>
       <div>:::TOTAL TEST AREA:::</div>
       <SubmitForm />
-      <div className="container-fluid">
-        <Row>
-          <Col></Col>
-          <Col xs={10}>           
-            <Header />
-            <AppRouter />
-          </Col>
-          <Col></Col>
-        </Row>
-      </div>
-    </div>
+      <Header />
+      <AppRouter />
+    </Container>
   )
 }
 

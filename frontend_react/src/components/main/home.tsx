@@ -1,5 +1,5 @@
-import SubmitForm from "../shared/submit-form";
-import Header from "components/shared/header";
+import { Container } from "react-bootstrap";
+import MainSlide from "./main-slide";
 
 function Home() {
   interface Props {
@@ -10,9 +10,9 @@ function Home() {
   const a: Props = {firstName: "a", lastName: "b"};
 
   return (
-    <div className="container-fluid">
-      메인 페이지 내용
-    </div>
+    <Container className="container-fluid">
+      <MainSlide />
+    </Container>
   );
 }
 

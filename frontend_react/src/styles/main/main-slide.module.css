@@ -1,0 +1,10 @@
+.main_slide_body {
+  background-color: black;
+  text-align: center;
+  height: 400px;
+}
+
+.main_slide_item {
+  border: solid 2px red;
+  height: 400px;
+}
