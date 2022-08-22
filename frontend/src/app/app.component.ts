@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ApiService } from './service/api.service';
 
 @Component({
@@ -6,11 +6,7 @@ import { ApiService } from './service/api.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'frontend';
-
-  backendData: string = '';
-  dbData: any;
+export class AppComponent implements OnInit {
 
   constructor(
     private apiService: ApiService
@@ -21,4 +17,10 @@ export class AppComponent {
     });
   }
 
+  ngOnInit() {
+    console.log('FrontEnd app started.');
+  }
+
+  title = 'frontend';
+  backendData: string = '';
 }
