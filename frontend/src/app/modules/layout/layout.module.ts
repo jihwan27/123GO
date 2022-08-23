@@ -5,6 +5,8 @@ import {LayoutRouterModule} from "./layout-router.module";
 import {HeaderModule} from "../header/header.module";
 import {MainModule} from "../main/main.module";
 import {LoginModule} from "../login/login.module";
+import { LeftSidePanelModule } from '../side-panels/right-side-panel/right-side-pannel.module';
+import { RightSidePanelModule } from '../side-panels/left-side-panel/left-side-panel.module';
 
 
 
@@ -17,6 +19,8 @@ import {LoginModule} from "../login/login.module";
     HeaderModule,
     MainModule,
     LoginModule,
+    LeftSidePanelModule,
+    RightSidePanelModule,
     LayoutRouterModule
   ]
 })
