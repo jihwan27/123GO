@@ -1,0 +1,11 @@
+.card {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.recommend-header {
+  margin-top: 2rem;
+  font-size: 3rem;
+  text-align: center;
+}
