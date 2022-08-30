@@ -1,5 +1,5 @@
 .recommend-tab-body {
-  margin-top: 2rem;
+  margin-top: 8rem;
 }
 
 .recommend-tab-header {
@@ -11,10 +11,18 @@
   font-size: 2rem;
 }
 
+.card {
+  background-color: grey;
+}
+
 .card-title {
   font-size: 3rem;
 }
 
 .card-body {
   font-size: 2rem;
+}
+
+.col {
+  height: 25rem;
 }
