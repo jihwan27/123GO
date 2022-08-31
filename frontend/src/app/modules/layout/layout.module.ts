@@ -8,6 +8,7 @@ import {LoginModule} from "../login/login.module";
 import { LeftSidePanelModule } from '../side-panels/right-side-panel/right-side-pannel.module';
 import { RightSidePanelModule } from '../side-panels/left-side-panel/left-side-panel.module';
 import { ApiService } from 'src/app/service/api.service';
+import { FooterModule } from '../footer/footer.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ApiService } from 'src/app/service/api.service';
     LoginModule,
     LeftSidePanelModule,
     RightSidePanelModule,
-    LayoutRouterModule
+    LayoutRouterModule,
+    FooterModule
   ],
   providers: [
     ApiService

@@ -1,0 +1,10 @@
+.pannel-right {
+  height: 100%;
+}
+
+.pannel-content {
+  font-size: 3rem;
+  text-align: center;
+  top: 5rem;
+  position: relative;
+}

@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {MainComponent} from "./components/main.component";
 import { BannerImageComponent } from './components/banner-image/banner-image.component';
-import { MainRecommendComponent } from './components/main-recommend/main-recommend.component';
-import { MainRecommendTabComponent } from './components/main-recommend-tab/main-recommend-tab.component';
+import { RecommendCourseComponent } from './components/recommend-course/recommend-course.component';
+import { RecommendSubComponent } from './components/recommend-sub/recommend-sub.component';
 
 
 
@@ -11,8 +11,8 @@ import { MainRecommendTabComponent } from './components/main-recommend-tab/main-
   declarations: [
     MainComponent,
     BannerImageComponent,
-    MainRecommendComponent,
-    MainRecommendTabComponent
+    RecommendSubComponent,
+    RecommendCourseComponent
   ],
   imports: [
     CommonModule

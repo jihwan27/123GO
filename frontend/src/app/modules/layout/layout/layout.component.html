@@ -1,15 +1,15 @@
 <app-header></app-header>
-
-<div class="container-fluid border layout">
+<div class="container-fluid layout">
   <div class="row">
-    <div class="col-md-1  border">
+    <div class="layout-side-left col-md-1">
      <app-left-side-panel></app-left-side-panel>
     </div>
-    <div class="col-md-10  border">
+    <div class="layout-body col-md-10">
       <router-outlet></router-outlet>
     </div>
-    <div class="col-md-1  border">
+    <div class="layout-side-right col-md-1">
      <app-right-side-panel></app-right-side-panel>
     </div>
   </div>
 </div>
+<app-footer></app-footer>

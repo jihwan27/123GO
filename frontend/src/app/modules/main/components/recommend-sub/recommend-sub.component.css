@@ -1,10 +1,13 @@
+.recommend-sub {
+  padding: 0;
+}
 .card {
   margin-top: 1rem;
   margin-bottom: 1rem;
   font-size: 2rem;
 }
 
-.recommend-header {
+.recommend-sub-header {
   margin-top: 8rem;
   font-size: 3rem;
   text-align: center;
