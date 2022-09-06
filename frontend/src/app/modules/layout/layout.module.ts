@@ -7,8 +7,9 @@ import {MainModule} from "../main/main.module";
 import {LoginModule} from "../login/login.module";
 import { LeftSidePanelModule } from '../side-panels/right-side-panel/right-side-pannel.module';
 import { RightSidePanelModule } from '../side-panels/left-side-panel/left-side-panel.module';
-import { ApiService } from 'src/app/service/api.service';
+import { ApiService } from 'src/app/shared/service/api/api.service';
 import { FooterModule } from '../footer/footer.module';
+import { BoardModule } from '../board/board.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FooterModule } from '../footer/footer.module';
     LeftSidePanelModule,
     RightSidePanelModule,
     LayoutRouterModule,
-    FooterModule
+    FooterModule,
+    BoardModule
   ],
   providers: [
     ApiService

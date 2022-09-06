@@ -1,0 +1,12 @@
+mat-table {
+  width: 100%;
+}
+
+mat-header-cell, mat-cell {
+  width: 25%;
+}
+
+/* mat-paginator {
+  font-size: 14px;
+  width: 100%;
+} */

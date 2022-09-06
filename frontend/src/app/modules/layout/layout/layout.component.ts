@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ApiService } from 'src/app/service/api.service';
+import { ApiService } from 'src/app/shared/service/api/api.service';
 
 @Component({
   selector: 'app-layout',

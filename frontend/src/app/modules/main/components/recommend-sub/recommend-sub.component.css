@@ -5,10 +5,11 @@
   margin-top: 1rem;
   margin-bottom: 1rem;
   font-size: 2rem;
+  text-align: center !important;
 }
 
 .recommend-sub-header {
   margin-top: 8rem;
   font-size: 3rem;
-  text-align: center;
+  text-align: center !important;
 }
