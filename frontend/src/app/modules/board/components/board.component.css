@@ -6,6 +6,16 @@ mat-header-cell, mat-cell {
   width: 25%;
 }
 
+.board-best {
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+}
+
+.board-best-title, .board-best-all {
+  font-size: 2rem;
+  text-align: center;
+}
+
 /* mat-paginator {
   font-size: 14px;
   width: 100%;
