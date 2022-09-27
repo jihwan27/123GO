@@ -1,16 +1,18 @@
 <div class="header">
   <ul class="nav nav-pills nav-fill">
+    <!-- TODO: 라우팅 이동하며 탭 정보가 사라지기 때문에, 해당 컴포넌트에서 자신의 탭이 무엇인지 emit 하도록 수정하여야 함. -->
+    <!-- TODO: 페이지 이동시 깜빡거림 없앨 수 없는지? -->
     <li class="nav-item">
-      <a class="nav-link" [ngClass]="{'active': true}" aria-current="page" href="#">오늘의 123차!</a>
+      <a class="nav-link" [ngClass]="{'active': tab === 'main'}" (click)="changeTab('main')" aria-current="page" href="main">오늘의 123차!</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">나만의 123차</a>
+      <a class="nav-link" [ngClass]="{'active': tab === 'custom'}" (click)="changeTab('custom')" href="#">나만의 123차</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">주당로드</a>
+      <a class="nav-link" [ngClass]="{'active': tab === 'map'}" (click)="changeTab('map')" href="map">주당로드</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="board">음주 컬럼</a>
+      <a class="nav-link" [ngClass]="{'active': tab === 'board'}" (click)="changeTab('board')" href="board">음주 컬럼</a>
     </li>
   </ul>
 </div>

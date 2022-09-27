@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  tab: 'main' | 'custom' | 'map' | 'board' = 'main';
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  changeTab(tab: 'main' | 'custom' | 'map' | 'board'): void {
+    console.log(tab);
+    this.tab = tab;
   }
 
 }
