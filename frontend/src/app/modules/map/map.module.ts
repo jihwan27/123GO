@@ -5,11 +5,13 @@ import { MapTableComponent } from './components/map-table/map-table/map-table.co
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 import { MaterialModule } from 'src/app/shared/module/material.module';
+import { MapModalComponent } from './components/map-table/map-modal/map-modal.component';
 
 @NgModule({
   declarations: [
     MapComponent,
-    MapTableComponent
+    MapTableComponent,
+    MapModalComponent
   ],
   imports: [
     CommonModule,

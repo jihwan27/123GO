@@ -1,15 +1,14 @@
 <div class="map-table-top">
   <div class="row line-second">
-    <!-- TODO: 아래 테이블 컴포넌트에 맞추어 table 화. -->
     <div *ngFor="let datas of data" class="col-sm-4">
-      <mat-card class="example-card">
+      <mat-card class="map-table-card" >
         <mat-card-header>
           <div mat-card-avatar class="example-header-image"></div>
           <mat-card-title>{{datas.name}}</mat-card-title>
           <mat-card-subtitle>Dog Breed</mat-card-subtitle>
         </mat-card-header>
-        <img mat-card-image src="/assets/map-top/map_top_1.png" alt="Photo of food">
-        <mat-card-content>
+        <img mat-card-image src="/assets/map-top/map_top_1.png" alt="Photo of food" (click)="openMapModal()">
+        <mat-card-content (click)="openMapModal()">
           <p>
             The Shiba Inu.
           </p>
@@ -20,31 +19,14 @@
         </mat-card-actions>
       </mat-card>
     </div>
-
   </div>
-
   <div class="map-table-board">
-
     <div class="board-all">
-      <div class="mat-elevation-z1 board">
-        <mat-table class="mat-elevation-z1" [dataSource]="dataSource" matSort>
-      
-          <ng-container *ngFor="let column of columns" [matColumnDef]="column.columnDef">
-            <mat-header-cell *matHeaderCellDef mat-sort-header>
-              {{column.header}}
-            </mat-header-cell>
-            <mat-cell *matCellDef="let row">
-              {{column.cell(row)}}
-            </mat-cell>
-          </ng-container>
-          <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
-          <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
-        </mat-table>
-      
-        <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page of users"></mat-paginator>
+      <div class="mat-elevation-z1 board">      
+        <!-- FIXME: 그냥 페이지 수에 따라 9*n개 만큼 리스트 잘라서 보여주면 될 것 같음. 굳이 안맞는 포맷 어거지로 넣기보다... -->
+        <mat-paginator [pageSizeOptions]="[9]" aria-label="Select page of users"></mat-paginator>
       </div>
     </div>
-
   </div>
 </div>
 
