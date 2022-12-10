@@ -3,7 +3,7 @@ import { MatPaginator } from '@angular/material/paginator';
 import { MatDialog } from '@angular/material/dialog';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
-import { MapModalComponent } from '../map-modal/map-modal.component';
+import { CardModalComponent } from '../card-modal/card-modal.component';
 
 export interface PeriodicElement {
   name: string;
@@ -11,11 +11,11 @@ export interface PeriodicElement {
 }
 
 @Component({
-  selector: 'app-map-table',
-  templateUrl: './map-table.component.html',
-  styleUrls: ['./map-table.component.css']
+  selector: 'app-card-table',
+  templateUrl: './card-table.component.html',
+  styleUrls: ['./card-table.component.css']
 })
-export class MapTableComponent implements OnInit {
+export class CardTableComponent implements OnInit {
   dataSource: MatTableDataSource<PeriodicElement>;
   data:Array<{name: string, name2: string}> = [{name: 'a', name2: '123'}, {name: 'b', name2: '1w23'},{name: 'c', name2: '1dw23'},{name: 'qwe', name2: '1qwqqq3'},{name: '1a', name2: '1213'},{name: 'ae', name2: '12e3'},{name: 'abbbb', name2: '1bbbb23'},{name: 'aasdasd', name2: '1asdasd23'},{name: '3a', name2: '123aq'}];
 
@@ -37,7 +37,7 @@ export class MapTableComponent implements OnInit {
   }
 
   openMapModal(): void {
-    const dialogRef = this.dialog.open(MapModalComponent);
+    const dialogRef = this.dialog.open(CardModalComponent);
     dialogRef.afterClosed().subscribe(result => console.log(`dialog close.`));
   }
 

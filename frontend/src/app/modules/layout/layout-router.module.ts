@@ -3,7 +3,7 @@ import {RouterModule, Routes} from "@angular/router";
 import {LayoutComponent} from "./layout/layout.component";
 import {MainComponent} from "../main/components/main/main.component";
 import { BoardComponent } from '../board/components/board.component';
-import { MapTableComponent } from '../map/components/map-table/map-table/map-table.component';
+import { CardTableComponent } from '../card/components/card-table/card-table.component';
 
 const routes: Routes = [
   {
@@ -11,13 +11,16 @@ const routes: Routes = [
     children: [
       { path: '', redirectTo: 'main', pathMatch: 'full' },
       {
-        path: 'main', component: MainComponent
+        path: 'main', component: MainComponent,
+        loadChildren: () => import('../main/main.module').then(m => m.MainModule)
       },
       {
-        path: 'board', component: BoardComponent
+        path: 'board', component: BoardComponent,
+        loadChildren: () => import('../board/board.module').then(m => m.BoardModule)
       },
       {
-        path: 'map', component: MapTableComponent
+        path: 'card', component: CardTableComponent,
+        loadChildren: () => import('../card/card.module').then(m => m.CardModule)
       }
     ]
   }

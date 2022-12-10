@@ -10,7 +10,7 @@ import { RightSidePanelModule } from '../side-panels/left-side-panel/left-side-p
 import { ApiService } from 'src/app/shared/service/api/api.service';
 import { FooterModule } from '../footer/footer.module';
 import { BoardModule } from '../board/board.module';
-import { MapModule } from '../map/map.module';
+import { CardModule } from '../card/card.module';
 
 @NgModule({
   declarations: [
@@ -26,7 +26,7 @@ import { MapModule } from '../map/map.module';
     LayoutRouterModule,
     FooterModule,
     BoardModule,
-    MapModule
+    CardModule
   ],
   providers: [
     ApiService

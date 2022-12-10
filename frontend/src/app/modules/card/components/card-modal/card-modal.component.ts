@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 
 @Component({
-  selector: 'app-map-modal',
-  templateUrl: './map-modal.component.html',
-  styleUrls: ['./map-modal.component.css']
+  selector: 'app-card-modal',
+  templateUrl: './card-modal.component.html',
+  styleUrls: ['./card-modal.component.css']
 })
-export class MapModalComponent implements OnInit {
+export class CardModalComponent implements OnInit {
 
   constructor() { }
 

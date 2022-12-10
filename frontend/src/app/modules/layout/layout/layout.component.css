@@ -1,5 +1,5 @@
 .layout {
-  padding-top: 4.5rem;
+  padding-top: 3.5rem;
 }
 
 .layout-body {
@@ -14,10 +14,10 @@
   padding: 0;
 }
 
-  .select,
-  #locale {
-    width: 100%;
-  }
-  .like {
-    margin-right: 10px;
-  }
+.select,
+#locale {
+  width: 100%;
+}
+.like {
+  margin-right: 10px;
+}

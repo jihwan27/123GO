@@ -1,18 +1,63 @@
 <div class="header">
-  <ul class="nav nav-pills nav-fill">
-    <!-- TODO: 라우팅 이동하며 탭 정보가 사라지기 때문에, 해당 컴포넌트에서 자신의 탭이 무엇인지 emit 하도록 수정하여야 함. -->
-    <!-- TODO: 페이지 이동시 깜빡거림 없앨 수 없는지? -->
-    <li class="nav-item">
-      <a class="nav-link" [ngClass]="{'active': tab === 'main'}" (click)="changeTab('main')" aria-current="page" href="main">오늘의 123차!</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" [ngClass]="{'active': tab === 'custom'}" (click)="changeTab('custom')" href="#">나만의 123차</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" [ngClass]="{'active': tab === 'map'}" (click)="changeTab('map')" href="map">주당로드</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" [ngClass]="{'active': tab === 'board'}" (click)="changeTab('board')" href="board">음주 컬럼</a>
-    </li>
-  </ul>
+  <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" [ngClass]="{'active': tab === 'main'}" (click)="changeTab('main')" aria-current="page" href="main">오늘의 이야기</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [ngClass]="{'active': tab === 'custom'}" (click)="changeTab('custom')" href="#">나만의 글</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [ngClass]="{'active': tab === 'card'}" (click)="changeTab('card')" href="card">최고의 한 장</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              마음대로
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="nav-link" [ngClass]="{'active': tab === 'board'}" (click)="changeTab('board')" href="board">일상</a></li>
+              <li><a class="nav-link" [ngClass]="{'active': tab === 'board'}" (click)="changeTab('board')" href="board">음식</a></li>
+              <li><a class="nav-link" [ngClass]="{'active': tab === 'board'}" (click)="changeTab('board')" href="board">취미</a></li>
+              <li><a class="nav-link" [ngClass]="{'active': tab === 'board'}" (click)="changeTab('board')" href="board">직장</a></li>
+              <li><a class="nav-link" [ngClass]="{'active': tab === 'board'}" (click)="changeTab('board')" href="board">사색(잡생각)</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav> -->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown link
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 </div>
