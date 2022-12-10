@@ -7,7 +7,7 @@
           <mat-card-title>{{datas.name}}</mat-card-title>
           <mat-card-subtitle>Dog Breed</mat-card-subtitle>
         </mat-card-header>
-        <img mat-card-image src="/assets/map-top/map_top_1.png" alt="Photo of food" (click)="openMapModal()">
+        <!-- <img mat-card-image src="/assets/map-top/map_top_1.png" alt="Photo of food" (click)="openMapModal()"> -->
         <mat-card-content (click)="openMapModal()">
           <p>
             The Shiba Inu.
@@ -24,7 +24,7 @@
     <div class="board-all">
       <div class="mat-elevation-z1 board">      
         <!-- FIXME: 그냥 페이지 수에 따라 9*n개 만큼 리스트 잘라서 보여주면 될 것 같음. 굳이 안맞는 포맷 어거지로 넣기보다... -->
-        <mat-paginator [pageSizeOptions]="[9]" aria-label="Select page of users"></mat-paginator>
+        <mat-paginator [pageSizeOptions]="[9, 18]" aria-label="Select page of users"></mat-paginator>
       </div>
     </div>
   </div>
