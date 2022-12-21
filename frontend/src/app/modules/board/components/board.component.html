@@ -1,6 +1,6 @@
 <div class="board-best">
 	<div class="mat-elevation-z1 board">
-		<div class="board-best-title">주목받는 글</div>
+		<h2 class="major"><span>인기글</span></h2>
 		<mat-table class="mat-elevation-z1" [dataSource]="dataSourceBest">
 	
 			<ng-container *ngFor="let column of columns" [matColumnDef]="column.columnDef">'
@@ -19,7 +19,7 @@
 
 <div class="board-all">
 	<div class="mat-elevation-z1 board">
-		<div class="board-best-title">전체글</div>
+		<h2 class="major"><span>전체글</span></h2>
 		<mat-table class="mat-elevation-z1" [dataSource]="dataSource" matSort>
 	
 			<ng-container *ngFor="let column of columns" [matColumnDef]="column.columnDef">'

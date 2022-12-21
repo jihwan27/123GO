@@ -4,6 +4,7 @@ import {LayoutComponent} from "./layout/layout.component";
 import {MainComponent} from "../main/components/main/main.component";
 import { BoardComponent } from '../board/components/board.component';
 import { CardTableComponent } from '../card/components/card-table/card-table.component';
+import { UserPageComponent } from '../user-page/components/user-page.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
       {
         path: 'card', component: CardTableComponent,
         loadChildren: () => import('../card/card.module').then(m => m.CardModule)
+      },
+      {
+        path: 'user', component: UserPageComponent,
+        loadChildren: () => import('../user-page/user-page.module').then(m => m.UserPageModule)
       }
     ]
   }

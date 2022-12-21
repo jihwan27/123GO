@@ -11,6 +11,7 @@ import { ApiService } from 'src/app/shared/service/api/api.service';
 import { FooterModule } from '../footer/footer.module';
 import { BoardModule } from '../board/board.module';
 import { CardModule } from '../card/card.module';
+import { UserPageModule } from '../user-page/user-page.module';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { CardModule } from '../card/card.module';
     LayoutRouterModule,
     FooterModule,
     BoardModule,
-    CardModule
+    CardModule,
+    UserPageModule
   ],
   providers: [
     ApiService
