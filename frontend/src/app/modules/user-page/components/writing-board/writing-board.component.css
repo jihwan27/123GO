@@ -1,0 +1,15 @@
+.write-board {
+  width: 100%;
+}
+
+.write-board-full-width {
+  width: 100%;
+}
+
+#content {
+  height: 30rem;
+}
+
+td {
+  padding-right: 8px;
+}
