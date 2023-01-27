@@ -6,6 +6,7 @@ import { ArticleListComponent } from './components/article-list/article-list.com
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 import { MaterialModule } from 'src/app/shared/module/material.module';
+import { UserInfoComponent } from './components/user-info/user-info.component';
 
 
 
@@ -13,7 +14,8 @@ import { MaterialModule } from 'src/app/shared/module/material.module';
   declarations: [
     UserPageComponent,
     WritingBoardComponent,
-    ArticleListComponent
+    ArticleListComponent,
+    UserInfoComponent
   ],
   imports: [
     CommonModule,
