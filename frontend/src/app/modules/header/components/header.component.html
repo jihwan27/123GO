@@ -1,61 +1,17 @@
-<!-- <div class="container-fluid header">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" [ngClass]="{'active': tab === 'main'}" (click)="changeTab('main')" aria-current="page" href="main">오늘의 이야기</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" [ngClass]="{'active': tab === 'user'}" (click)="changeTab('user')" href="user">나만의 글</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" [ngClass]="{'active': tab === 'card'}" (click)="changeTab('card')" href="card">한 쪽 문학</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              장르별 게시판
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" [ngClass]="{'active': tab === 'card'}" (click)="changeTab('board')" href="board">자유대화</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-</div> -->
-
-<!-- Header -->
-<!-- <header id="header">
-  <div class="logo container">
-    <div>
-      <h1><a href="index.html" id="logo">한 줄,</a></h1>
-      <p> 무엇이든 적어보세요</p>
-    </div>
-  </div>
-</header> -->
-
 <!-- Nav -->
 <nav id="nav">
   <ul>
-    <li class="current">
-      <a [ngClass]="{'active': tab === 'main'}" (click)="changeTab('main')" aria-current="page" href="main">오늘의 이야기</a>
+    <li [ngClass]="this.tab === 'main' ? 'current' : ''">
+      <a [routerLink]="['main']" (click)="changeTab('main')">오늘의 이야기</a>
     </li>
-    <li>
-      <a [ngClass]="{'active': tab === 'user'}" (click)="changeTab('user')" href="user">나만의 글</a>
+    <li [ngClass]="this.tab === 'user' ? 'current' : ''">
+      <a [routerLink]="['user']" (click)="changeTab('user')">나만의 글</a>
     </li>
-    <li>
-      <a [ngClass]="{'active': tab === 'card'}" (click)="changeTab('card')" href="card">한 쪽 문학</a>
+    <li [ngClass]="this.tab === 'card' ? 'current' : ''">
+      <a [routerLink]="['card']" (click)="changeTab('card')">한 쪽 문학</a>
     </li>
-    <li>
-      <a [ngClass]="{'active': tab === 'card'}" (click)="changeTab('board')" href="board">전체 글</a>
+    <li [ngClass]="this.tab === 'board' ? 'current' : ''">
+      <a [routerLink]="['board']" (click)="changeTab('board')">전체 글</a>
     </li>
   </ul>
 </nav>

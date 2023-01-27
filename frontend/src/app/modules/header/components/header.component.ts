@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+type Tab = 'main' | 'user' | 'card' | 'board';
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -7,16 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  tab: 'main' | 'user' | 'card' | 'board' = 'main';
+  tab: Tab = 'main';
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  changeTab(tab: 'main' | 'user' | 'card' | 'board'): void {
-    console.log(tab);
+  changeTab(tab: Tab): void {
     this.tab = tab;
+    console.log(this.tab);
   }
 
 }
